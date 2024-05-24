@@ -1,0 +1,63 @@
+.about-me {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgba(20, 29, 47, 1);
+    background-image: url('../../../assets/img/shadow2.png');
+    background-size: 12% 100%;
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 0;
+    position: relative;
+    font-family: 'Poppins';
+    padding-bottom: 50px;
+
+    .text-part {
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 100px;
+        gap: 35px;
+        color: rgba(255, 255, 255, 1);
+
+        h3 {
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 108px;
+        }
+
+        >p {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            line-height: 1.5;
+        }
+
+        .personal{
+            display: flex;
+            gap: 35;
+            align-items: flex-start;
+            >img{
+                padding-right: 20px;
+                height: 60px;
+                width: 70px;
+            }
+        }
+    }
+
+    .image-part {
+        height: auto;
+        width: 450px;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+
+        >img {
+            width: 100%;
+            border-radius: 100%;
+            border: 4px solid rgba(112, 230, 28, 1);
+        }
+    }
+}
