@@ -1,0 +1,366 @@
+.background {
+    position: relative;
+    z-index: 1; // Stelle sicher, dass der Hintergrund über den Inhalten liegt
+    background-color: rgba(20, 29, 47, 1);
+}
+
+section {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(20, 29, 47, 1);
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 80px;
+    transform: translateX(-100%);
+    animation-delay: 0.1s;
+
+    >img {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.section.visible {
+    animation: slideInFromLeft 0.5s ease-out forwards 0.5s;
+}
+
+.section.reverse-row.visible {
+    animation: slideInFromRight 0.5s ease-out forwards 0.5s;
+}
+
+
+.project-review {
+
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+
+    .project-text {
+
+        gap: 35px;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            font-size: 32px;
+            font-weight: 700;
+            color: rgba(151, 71, 255, 1);
+        }
+
+        h4 {
+            font-size: 23px;
+            font-weight: 400;
+            color: rgba(112, 230, 28, 1);
+        }
+    }
+
+    .project-links {
+        display: flex;
+        gap: 66px;
+
+        .live-test {
+            z-index: 1;
+            top: 20px;
+            left: 25px;
+            width: 170px;
+            height: 58px;
+            border-radius: 10px;
+            padding: 15px 30px 15px 30px;
+            gap: 10px;
+            background-color: rgba(151, 71, 255, 1);
+            color: white;
+            border-style: none;
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 27.6px;
+
+            &:hover {
+                background-color: rgba(112, 230, 28, 1);
+                transition: ease-out 300ms;
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+
+        .gitHub {
+            z-index: 1;
+            top: 20px;
+            left: 25px;
+            width: 170px;
+            height: 58px;
+            border-radius: 10px;
+            border-color: rgba(112, 230, 28, 1);
+            border-style: solid;
+            padding: 15px 30px 15px 30px;
+            gap: 10px;
+            background-color: rgba(20, 29, 47, 1);
+            color: white;
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 27.6px;
+
+            &:hover {
+                background-color: rgba(112, 230, 28, 1);
+                transition: ease-out 300ms;
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.reverse-row {
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: flex-end;
+
+    h3 {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    h4 {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .description-text p {
+        text-align: right;
+    }
+
+    .project-links {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
+
+.background-purple {
+    background-image: url('../../../assets/img/shadow4.png');
+    background-size: 22% 100%;
+    background-repeat: no-repeat;
+}
+
+.background-green {
+    background-image: url('../../../assets/img/shadow5.png');
+    background-size: 13% 100%;
+    background-position: right 0px;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:768px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding-bottom: 60px;
+
+
+        .img {
+            >img{
+                width: 300px!important;
+            }
+        }
+
+        .project-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-links{
+            gap: 20px!important;
+        }
+
+        .description-text p {
+            text-align: center;
+        }
+
+
+        .project-links .live-test {
+            
+            width: 170px !important;
+            height: 55px !important;
+        }
+        
+    }
+
+    .reverse-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+
+        .project-review{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .description-text p {
+            text-align: center;
+        }
+        
+    }
+}
+
+@media(max-height: 600px){
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding-bottom: 60px;
+
+
+        .img {
+            >img{
+                width: 300px!important;
+            }
+        }
+
+        .project-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-links{
+            display: flex;
+            justify-content: center;
+            gap: 20px!important;
+            padding-bottom: 50px;
+        }
+
+        .description-text p {
+            text-align: center;
+        }
+
+
+        .project-links .live-test {
+            
+            width: 170px !important;
+            height: 55px !important;
+        }
+        
+    }
+
+    .reverse-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+
+        .project-review{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .description-text p {
+            text-align: center;
+        }
+        
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding-bottom: 60px;
+
+        .img {
+            >img{
+                width: 300px!important;
+            }
+        }
+
+        .project-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-links{
+            display: flex;
+            justify-content: center;
+            gap: 20px!important;
+            padding-bottom: 50px;
+        }
+
+        .description-text p {
+            text-align: center;
+        }
+
+
+        .project-links .live-test {
+            
+            width: 170px !important;
+            height: 55px !important;
+        }
+        
+    }
+
+    .reverse-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+
+        .project-review{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .description-text p {
+            text-align: center;
+        }
+        
+    }
+}
+
+@media(max-width:355px){
+    section{
+        .project-links .live-test {
+            font-size: 15px !important;
+            width: 120px !important;
+            height: 55px !important;
+        }
+
+        .project-links .gitHub {
+            font-size: 18px !important;
+            width: 120px !important;
+            height: 55px !important;
+        }   
+    }
+}

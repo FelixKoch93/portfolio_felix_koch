@@ -1,8 +1,17 @@
 <nav class="header font-poppins">
-<img class="icon" src="/assets/img/icon.png">       
+    <img class="icon" src="/assets/img/icon.png">
     <div class="navbar">
-        <a href="#">About me</a>
-        <a href="#">Skills</a>
-        <a href="#">Portfolio</a>
+        <a href="#about-me">{{ 'HEADER.About me' | translate }}</a>
+        <a href="#skills">{{ 'HEADER.Skills' | translate }}</a>
+        <a href="#portfolio">{{ 'HEADER.Portfolio' | translate }}</a>
+        <div class="">
+            <button class="translate-button" (click)="toggleLanguage()">{{buttonLabel}}</button>
+        </div>
+        <button class="mobile-menu" (click)="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </div>
+    <div class="menu-open" *ngIf="isMenuOpen">
+        <a href="#about-me" (click)="closeMenu()">{{ 'HEADER.About me' | translate }}</a>
+        <a href="#skills" (click)="closeMenu()">{{ 'HEADER.Skills' | translate }}</a>
+        <a href="#portfolio" (click)="closeMenu()">{{ 'HEADER.Portfolio' | translate }}</a>
     </div>
 </nav>

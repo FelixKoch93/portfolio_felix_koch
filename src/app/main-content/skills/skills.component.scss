@@ -59,3 +59,77 @@ section {
     }
     }
 }
+
+@media(max-width:768px){
+    section{
+        flex-direction: column-reverse;
+
+        .my-skills{
+            padding-right: 0px;
+        }
+
+        .signs{
+            row-gap: 0px;
+            column-gap: 0;
+            gap: 32px;
+            padding-left: 0px;
+            justify-content: center;
+        }
+
+        .skill-Headline{
+            justify-content: flex-end!important;
+            gap: 5px;
+
+            h3{
+                font-size: 33px;
+            }
+
+            >img{
+                width: 30px;
+            }
+        }
+        .skills > p {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 50px;
+        }
+
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+    section{
+        flex-direction: column-reverse;
+
+        .my-skills{
+            padding-right: 0px;
+        }
+
+        .signs{
+            row-gap: 0px;
+            column-gap: 0;
+            gap: 32px;
+            padding-left: 0px;
+            justify-content: center;
+        }
+
+        .skill-Headline{
+            justify-content: flex-end!important;
+            gap: 5px;
+
+            h3{
+                font-size: 33px;
+            }
+
+            >img{
+                width: 30px;
+            }
+        }
+        .skills > p {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 50px;
+        }
+
+    }
+}

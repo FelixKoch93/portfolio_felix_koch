@@ -2,20 +2,22 @@
     <div class="hero-container">
         <div class="photo-container">
             <div class="image">
-                <img src="/assets/img/profile.png" alt="">
+                <img src="../../../assets/img/profile.png" alt="">
             </div>
         </div>
         <div class="text-container">
             <div class="name-and-contact">
                 <div class="name-container">
-                    <p class="i-am">I am</p>
+                    <div class="im">
+                        <p class="i-am">{{ 'LANDINGPAGE.Iam' | translate }}</p>
+                    </div>
                     <div class="name">
-                        <h1>Felix Koch</h1>
-                        <h2>Frontend Developer</h2>
+                        <h1>{{ 'LANDINGPAGE.FelixKoch' | translate }}</h1>
+                        <h2>{{ 'LANDINGPAGE.Softwareengineer' | translate }}</h2>
                     </div>
                 </div>
-                <a href="#">
-                    <button class="lets-talk"> Kontakt </button>
+                <a href="#contact">
+                    <button class="lets-talk">{{ 'LANDINGPAGE.Contact' | translate }}</button>
                 </a>
             </div>
         </div>
@@ -23,7 +25,7 @@
     <div class="social-contact">
         <img class="vector-one" src="/assets/img/vector1.png" alt="">
         <a href="#" class="vertikal-wiggle">
-            <span> Scroll down</span>
+            <span>{{ 'LANDINGPAGE.ScrollDown' | translate }}</span>
             <img class="arrow-down" src="assets/img/arrow-down-line.png" alt="">
         </a>
     </div>

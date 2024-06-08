@@ -1,0 +1,127 @@
+{
+    "HEADER": {
+        "About me": "About me",
+        "Skills": "Skills",
+        "Portfolio": "Portfolio"
+    },
+    "LANDINGPAGE": {
+        "Iam": "I am",
+        "FelixKoch": "Felix Koch",
+        "Softwareengineer": "Frontend Developer",
+        "Contact": "Contakt",
+        "ScrollDown": "Scroll down"
+    },
+    "ABOUTME": {
+        "AboutMe": "About me",
+        "Introduction": "As a Frontend Developer from Bergisch Gladbach, Germany, I transform innovative concepts into functional web applications. The continuous exploration of new technologies brings great joy to me. My goal is to advance my career as a developer and embed my passion in a challenging work environment.",
+        "Skills": "My ability to find innovative solutions and approach complex problems in unconventional ways reflects my creativity. I love thinking outside the box and developing unique solutions, whether it's in web development, design, or problem-solving.",
+        "Puzzle": "In software development, I see each module as a puzzle piece that needs to find its place in the overall system. Through patient and careful work, I ensure that all pieces fit together and create a functional whole."
+    },
+    "MYSKILLS": {
+        "SkillTitle": "My skills",
+        "SkillDescription": "My abilities are like a vast treasure trove of tools - versatile and ready to use for every project, allowing me to approach it with creativity and precision."
+    },
+    "PORTFOLIO": {
+        "PortfolioDescription": "Here you'll find a meticulously assembled collection of my latest projects. Feel free to explore each one, test its functionality, or visit the GitHub repository to take a closer look at the code. I hope you enjoy browsing my work!"
+    },
+    "JOIN": {
+        "JoinDescription": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+    },
+    "EPL": {
+        "EPLDescription": "Jump and Run Game with object-oriented approach. Help Pepe find coins and throw Tabasco bottles to fight against the crazy chicken."
+    },
+    "POKEDEX": {
+        "PokedexDescription": "Based on the PokéAPI, create a simple library that provides Pokémon information and catalogs it."
+    },
+    "CONTACT": {
+        "ContactTitle": "Contact",
+        "ContactDescription": "Do you have a problem that needs to be solved?",
+        "SENDME": "Feel free to send me a message using this contact form",
+        "YOURNAME": "Your name",
+        "NAMEPLEASE": "Please enter your name",
+        "YOUREMAIL": "Your email address",
+        "EMAILPLEASE": "Please enter your email address",
+        "YOURMESSAGE": "Your message",
+        "MESSAGEPLEASE": "Please enter your message",
+        "PRIVACYPOLICYONE": "I have read the",
+        "POLICY": "Privacy Policy",
+        "PRIVACYPOLICYTWO": "and agree to the processing of my data in accordance with the terms set forth therein.",
+        "POLICYPLEASE": "Please accept the privacy policy",
+        "SEND": "Submit"
+    },
+    "IMPRINT": {
+        "ImprintTitle": "Imprint"
+    },
+    "PRIVACYPOLICY": {
+        "Headline": "Privacy Policy",
+        "Introduction": "Introduction",
+        "Interest": "We appreciate your interest in our website. Protecting your privacy is very important to us. Below, we provide detailed information on how we handle your data.",
+        "ResponsibleParty": {
+            "Name": "Felix Koch",
+            "Address": "Katterbachstraße 38, 51467 Bergisch Gladbach",
+            "Email": "felix.koch93@outlook.de"
+        },
+        "DataCollection": {
+            "OnWebsiteVisit": "On Visiting the Website",
+            "ContactFormUsage": "When Using Our Contact Form"
+        },
+        "DataCollectionDetails": {
+            "OnWebsiteVisit": {
+                "Information": "When you visit our website, information is automatically sent to the server of our website by the browser used on your device. This information is temporarily stored in a so-called log file.",
+                "StoredInformation": {
+                    "IPAddress": "IP address of the requesting computer",
+                    "AccessDateTime": "Date and time of access",
+                    "FileNameURL": "Name and URL of the accessed file",
+                    "ReferrerURL": "Website from which the access originated (referrer URL)",
+                    "BrowserDetails": "Browser used and, if applicable, the operating system of your computer as well as the name of your access provider"
+                }
+            },
+            "ContactFormUsage": "For any questions, we offer you the opportunity to contact us via a form provided on the website. Providing a valid email address is required so that we know who the request is from and to be able to respond to it."
+        },
+        "DataTransfer": "Data Transfer",
+        "DataTransferText": "Transmission of your personal data to third parties for purposes other than those listed below does not occur. We only pass on your personal data to third parties if...",
+        "Cookies": {
+            "Description": "Cookies",
+            "Explanation": "We use cookies on our site. These are small files that your browser automatically creates and that are stored on your device (laptop, tablet, smartphone, etc.) when you visit our site. The use of cookies serves, on the one hand, to make the use of our offer more pleasant for you."
+        },
+        "Rights": {
+            "Description": "Your Rights",
+            "RightsList": {
+                "InfoRequest": "to request information about your personal data processed by us in accordance with Art. 15 GDPR.",
+                "DataCorrection": "to request the immediate correction of incorrect or incomplete personal data stored by us in accordance with Art. 16 GDPR.",
+                "DataDeletion": "to request the deletion of your personal data stored by us in accordance with Art. 17 GDPR.",
+                "DataRestriction": "to request the restriction of the processing of your personal data in accordance with Art. 18 GDPR.",
+                "DataPortability": "to receive your personal data that you have provided to us in a structured, common, and machine-readable format in accordance with Art. 20 GDPR."
+            }
+        },
+        "ObjectionRight": {
+            "Description": "Right to Object",
+            "Explanation": "If your personal data is processed on the basis of legitimate interests pursuant to Art. 6 (1) sentence 1 lit. f GDPR, you have the right to object to the processing of your personal data pursuant to Art. 21 GDPR."
+        }
+    },
+
+        "IMPRINTPAGE": {
+            "ImprintTitle": "Impressum",
+            "GermanLegalInformation": "Information according to § 5 TMG",
+            "Name": "Felix Koch",
+            "Address": "Katterbachstraße 38",
+            "CityPostalCode": "51467 Bergisch Gladbach",
+            "Country": "Germany",
+            "Contact": "Contact",
+            "Phone": "Phone",
+            "YourPhoneNumber": "0163/7769698",
+            "Email": "Email",
+            "YourEmailAddress": "felix.koch93@outlook.de",
+            "LegalResponsibility": "Responsible for content according to § 55 Abs. 2 RStV",
+            "Disclaimer": "Disclaimer",
+            "DisclaimerContent": {
+                "ContentLiability": "Liability for content",
+                "ContentLiabilityText": "As a service provider, we are responsible for our own content on these pages in accordance with § 7 para.1 TMG (German Telemedia Act) and general laws. However, according to §§ 8 to 10 TMG, we are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.",
+                "Links": "Liability for links",
+                "LinksText": "Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the sites is always responsible for the content of the linked sites. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not identifiable at the time of linking.",
+                "Copyright": "Copyright",
+                "CopyrightText": "The content and works on these pages created by the site operators are subject to German copyright law. The reproduction, editing, distribution, and any kind of use outside the limits of copyright law require the written consent of the respective author or creator."
+            }
+        }
+    
+}

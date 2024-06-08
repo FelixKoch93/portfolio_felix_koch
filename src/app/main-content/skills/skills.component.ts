@@ -1,14 +1,23 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
+  constructor(private translate: TranslateService) {
+  }
+
+  toggleLanguage() {
+    console.log('toggleLanguage() called');
+    this.translate.use(this.translate.currentLang === 'de' ? 'en' : 'de');
+}
 
   signPictures: string[] = [
     '/assets/img/html.svg',

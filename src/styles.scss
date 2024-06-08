@@ -2,10 +2,38 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Poppins' !important;
+  font-family: 'Poppins' !important; 
 }
+
+/* Breite des Scrollbalkens */
+::-webkit-scrollbar {
+  width: 8px; /* Breite des Scrollbalkens */
+  margin-right: 20px;
+}
+
+/* Track (Hintergrund des Scrollbalkens) */
+::-webkit-scrollbar-track {
+  background: rgba(20, 29, 47, 1); /* Hintergrundfarbe des Track */
+}
+
+/* Handle (beweglicher Teil des Scrollbalkens) */
+::-webkit-scrollbar-thumb {
+  background: rgba(112, 230, 28, 1); /* Farbe des beweglichen Teils */
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Handle bei Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(151, 71, 255, 1); /* Farbe des beweglichen Teils beim Hover */
+}
+
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+
 .lets-talk {
-  z-index: 1;
+  position: relative;
+  z-index: 2;
   top: 20px;
   left: 25px;
   width: 170px;
@@ -70,6 +98,4 @@
     src: url('assets/fonts/poppins-v21-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 
-  .font-poppins{
-    font-family: 'Poppins';
-  }
+  

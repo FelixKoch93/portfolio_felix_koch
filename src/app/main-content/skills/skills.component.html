@@ -2,23 +2,20 @@
     <div class="signs">
         <div *ngFor="let url of signPictures; let i = index" class="sign-and-text">
             <img [src]="url" alt="">
-            <p>{{signText[i]}}</p>
+            <p>{{signText[i] | translate}}</p>
         </div>
     </div>
     <div class="my-skills">
         <div class="skills">
             <div class="skill-Headline">
-                <h3>Meine Skills</h3>
+                <h3>{{ 'MYSKILLS.SkillTitle' | translate }}</h3>
                 <img class="vector-2" src="../../../assets/img/vector2.png" alt="">
             </div>
 
-            <p>Meine Fähigkeiten sind wie ein reichhaltiger Vorrat an Instrumenten –
-                vielseitig und einsatzbereit, um jedes Projekt mit Kreativität und
-                Präzision anzugehen.
-            </p>
+            <p>{{ 'MYSKILLS.SkillDescription' | translate }}</p>
         </div>
-        <a href="#">
-            <button class="lets-talk">Kontakt</button>
+        <a href="#contact">
+            <button class="lets-talk">{{ 'LANDINGPAGE.Contact' | translate }}</button>
         </a>
     </div>
 </section>

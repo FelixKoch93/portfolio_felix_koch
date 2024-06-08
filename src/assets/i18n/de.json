@@ -1,0 +1,127 @@
+{
+    "HEADER": {
+        "About me": "Über mich",
+        "Skills": "Skills",
+        "Portfolio": "Portfolio"
+    },
+    "LANDINGPAGE": {
+        "Iam": "Ich bin",
+        "FelixKoch": "Felix Koch",
+        "Softwareengineer": "Frontend Entwickler",
+        "Contact": "Kontakt",
+        "ScrollDown": "nach unten scrollen"
+    },
+    "ABOUTME": {
+        "AboutMe": "Über mich",
+        "Introduction": "Als Frontend-Entwickler aus Bergisch Gladbach, Deutschland, verwandle ich innovative Konzepte in funktionale Webanwendungen. Die fortwährende Entdeckung neuer Technologien bereitet mir große Freude. Ich strebe danach, meine Karriere als Entwickler voranzutreiben und meine Leidenschaft in einem anspruchsvollen Arbeitsumfeld einzubringen.",
+        "Skills": "Meine Fähigkeit, innovative Lösungen zu finden und komplexe Probleme auf unkonventionelle Weise anzugehen, spiegelt meine Kreativität wider. Ich liebe es, außerhalb der Box zu denken und einzigartige Lösungen zu entwickeln, sei es in der Webentwicklung, im Design oder bei der Problemlösung.",
+        "Puzzle": "In der Softwareentwicklung sehe ich jedes Modul wie ein Puzzlestück, das seinen Platz im Gesamtsystem finden muss. Durch geduldige und sorgfältige Arbeit stelle ich sicher, dass alle Teile zusammenpassen und ein funktionierendes Ganzes ergeben."
+    },
+    "MYSKILLS": {
+        "SkillTitle": "Meine Skills",
+        "SkillDescription": "Meine Fähigkeiten sind wie ein reichhaltiger Vorrat an Instrumenten – vielseitig und einsatzbereit, um jedes Projekt mit Kreativität und Präzision anzugehen."
+    },
+    "PORTFOLIO": {
+        "PortfolioDescription": "Hier finden Sie eine sorgfältig zusammengestellte Sammlung meiner neuesten Projekte. Erkunden Sie gerne jedes einzelne, testen Sie dessen Funktionalität oder besuchen Sie das GitHub-Repository, um einen genaueren Blick auf den Code zu werfen. Ich hoffe, Sie haben Freude beim Durchstöbern meiner Arbeit!"
+    },
+    "JOIN": {
+        "JoinDescription": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
+    },
+    "EPL": {
+        "EPLDescription": "Jump and Run Game mit objektorientiertem Ansatz. Helfen Sie Pepe, Münzen zu finden und Tabascoflaschen zu werfen, um gegen das verrückte Huhn zu kämpfen."
+    },
+    "POKEDEX": {
+        "PokedexDescription": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+    },
+    "CONTACT": {
+        "ContactTitle": "Kontakt",
+        "ContactDescription": "Sie haben ein Problem, das gelöst werden muss?",
+        "SENDME": "Senden Sie mir gerne eine Nachricht über dieses Kontaktformular",
+        "YOURNAME": "Ihr Name",
+        "NAMEPLEASE": "Bitte geben Sie Ihren Namen ein",
+        "YOUREMAIL": "Ihre E-Mail-Adresse",
+        "EMAILPLEASE": "Bitte geben Sie Ihre E-Mail-Adresse ein",
+        "YOURMESSAGE": "Ihre Nachricht",
+        "MESSAGEPLEASE": "Bitte geben Sie Ihre Nachricht ein",
+        "PRIVACYPOLICYONE": "Ich habe die",
+        "POLICY": "Datenschutzerklärung",
+        "PRIVACYPOLICYTWO": "gelesen und stimme der Verarbeitung meiner Daten gemäß den darin dargelegten Bedingungen zu.",
+        "POLICYPLEASE": "Bitte akzeptieren Sie die Datenschutzerklärung",
+        "SEND": "Absenden"
+    },
+    "IMPRINT": {
+        "ImprintTitle": "Impressum"
+    },
+
+    "PRIVACYPOLICY": {
+        "Headline": "Datenschutzerklärung",
+        "Introduction": "Einleitung",
+        "Interest": "Wir freuen uns über Ihr Interesse an unserer Website. Der Schutz Ihrer Privatsphäre ist für uns sehr wichtig. Nachstehend informieren wir Sie ausführlich über den Umgang mit Ihren Daten.",
+        "ResponsibleParty": {
+            "Name": "Felix Koch",
+            "Address": "Katterbachstraße 38, 51467 Bergisch Gladbach",
+            "Email": "felix.koch93@outlook.de"
+        },
+        "DataCollection": {
+            "OnWebsiteVisit": "Beim Besuch der Website",
+            "ContactFormUsage": "Bei Nutzung unseres Kontaktformulars"
+        },
+        "DataCollectionDetails": {
+            "OnWebsiteVisit": {
+                "Information": "Wenn Sie unsere Website aufrufen, werden durch den auf Ihrem Endgerät zum Einsatz kommenden Browser automatisch Informationen an den Server unserer Website gesendet. Diese Informationen werden temporär in einem sogenannten Logfile gespeichert.",
+                "StoredInformation": {
+                    "IPAddress": "IP-Adresse des anfragenden Rechners",
+                    "AccessDateTime": "Datum und Uhrzeit des Zugriffs",
+                    "FileNameURL": "Name und URL der abgerufenen Datei",
+                    "ReferrerURL": "Website, von der aus der Zugriff erfolgt (Referrer-URL)",
+                    "BrowserDetails": "Verwendeter Browser und ggf. das Betriebssystem Ihres Rechners sowie der Name Ihres Access-Providers"
+                }
+            },
+            "ContactFormUsage": "Bei Fragen jeglicher Art bieten wir Ihnen die Möglichkeit, mit uns über ein auf der Website bereitgestelltes Formular Kontakt aufzunehmen. Dabei ist die Angabe einer gültigen E-Mail-Adresse erforderlich, damit wir wissen, von wem die Anfrage stammt und um diese beantworten zu können."
+        },
+        "DataTransfer": "Weitergabe von Daten",
+        "DataTransferText": "Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den im Folgenden aufgeführten Zwecken findet nicht statt. Wir geben Ihre persönlichen Daten nur an Dritte weiter, wenn...",
+        "Cookies": {
+            "Description": "Cookies",
+            "Explanation": "Wir setzen auf unserer Seite Cookies ein. Hierbei handelt es sich um kleine Dateien, die Ihr Browser automatisch erstellt und die auf Ihrem Endgerät (Laptop, Tablet, Smartphone o.ä.) gespeichert werden, wenn Sie unsere Seite besuchen. Der Einsatz von Cookies dient einerseits dazu, die Nutzung unseres Angebots für Sie angenehmer zu gestalten."
+        },
+        "Rights": {
+            "Description": "Ihre Rechte",
+            "RightsList": {
+                "InfoRequest": "gemäß Art. 15 DSGVO Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten zu verlangen.",
+                "DataCorrection": "gemäß Art. 16 DSGVO unverzüglich die Berichtigung unrichtiger oder Vervollständigung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen.",
+                "DataDeletion": "gemäß Art. 17 DSGVO die Löschung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen.",
+                "DataRestriction": "gemäß Art. 18 DSGVO die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.",
+                "DataPortability": "gemäß Art. 20 DSGVO Ihre personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesebaren Format zu erhalten."
+            }
+        },
+        "ObjectionRight": {
+            "Description": "Widerspruchsrecht",
+            "Explanation": "Sofern Ihre personenbezogenen Daten auf Grundlage von berechtigten Interessen gemäß Art. 6 Abs.1 S. 1 lit. f DSGVO verarbeitet werden, haben Sie das Recht, gemäß Art. 21 DSGVO Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten einzulegen."
+        }
+    },
+
+        "IMPRINTPAGE": {
+            "ImprintTitle": "Impressum",
+            "GermanLegalInformation": "Angaben gemäß § 5 TMG",
+            "Name": "Felix Koch",
+            "Address": "Katterbachstraße 38",
+            "CityPostalCode": "51467 Bergisch Gladbach",
+            "Country": "Deutschland",
+            "Contact": "Kontakt",
+            "Phone": "Telefon",
+            "YourPhoneNumber": "0163/7769698",
+            "Email": "E-Mail",
+            "YourEmailAddress": "felix.koch93@outlook.de",
+            "LegalResponsibility": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+            "Disclaimer": "Haftungsausschluss (Disclaimer)",
+            "DisclaimerContent": {
+                "ContentLiability": "Haftung für Inhalte",
+                "ContentLiabilityText": "Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+                "Links": "Haftung für Links",
+                "LinksText": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
+                "Copyright": "Urheberrecht",
+                "CopyrightText": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+            }
+        }
+}
