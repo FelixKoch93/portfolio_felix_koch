@@ -4,7 +4,11 @@
     background-color: rgba(20, 29, 47, 1);
     padding-top: 106px;
     overflow: hidden;
-
+    
+    .container {
+        max-width: 1120px;
+        margin: 0 auto;
+    }
     .hero-container {
         display: flex;
         justify-content: center;
@@ -73,14 +77,14 @@
                     flex-direction: column;
 
                     >h1 {
-                        font-size: 110px;
+                        font-size: 94px;
                         font-weight: 700;
                         line-height: 108px;
                         color: rgba(255, 255, 255, 1);
                     }
 
                     >h2 {
-                        font-size: 55px;
+                        font-size: 50px;
                         font-weight: 400;
                         line-height: 69.9px;
                         color: rgba(151, 71, 255, 1);
@@ -121,6 +125,7 @@
 
 @media(max-width:354px) {
     .landingpage {
+        
         .hero-container {
             padding-top: 77px;
 
@@ -140,6 +145,36 @@
                 }
                 h2{
                     font-size:20px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) and (max-height: 667px){
+    .landingpage{
+        .container{
+            .hero-container{
+                padding-top: 35px;
+            }
+            .photo-container{
+                .image{
+                    padding-top: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-height:667px){
+    .landingpage{
+        .container{
+            .hero-container{
+                padding-top: 35px;
+            }
+            .photo-container{
+                .image{
+                    padding-top: 0px;
                 }
             }
         }
@@ -186,7 +221,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1119px) {
     .section {
         display: flex;
         flex-direction: column;
@@ -297,3 +332,4 @@
         display: none;
     }
 }
+

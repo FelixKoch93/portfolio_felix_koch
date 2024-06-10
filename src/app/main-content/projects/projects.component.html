@@ -1,24 +1,28 @@
-<section *ngFor="let project of projects; let i = index;" [ngClass]="{ 'reverse-row': i === 1, 
-                      'background-purple': i === 0, 
-                      'background-green': i === 2 }" class="section" #project>
-    <div class="img">
-        <img [src]="project.imageSrc" alt="">
-    </div>
-    <div class="project-review">
-        <div class="project-text">
-            <h3>{{ project.name | translate }}</h3> 
-            <h4>{{ project.textContent }}</h4>
-            <div class="description-text">
-                <p>{{ project.description | translate }}</p>
-            </div>
-        </div>
-        <div class="project-links">
-            <a href="{{ project.link }}" target="_blank">
-                <button class="live-test">live test</button> 
-            </a>
-            <a href="{{project.gitHubLink}}" target="_blank">
-                <button class="gitHub">Github</button> 
-            </a>
-        </div>
-    </div>
+<section *ngFor="let project of projects; let i = index;" [ngClass]="{ 
+    'reverse-row': i === 1, 
+    'background-purple': i === 0, 
+    'background-green': i === 2 }" class="section" #project>
+
+<div class="container">
+<div class="img">
+<img [src]="project.imageSrc" alt="">
+</div>
+<div class="project-review">
+<div class="project-text">
+<h3>{{ project.name | translate }}</h3>
+<h4>{{ project.textContent }}</h4>
+<div class="description-text">
+  <p>{{ project.description | translate }}</p>
+</div>
+</div>
+<div class="project-links">
+<a href="{{ project.link }}" target="_blank">
+  <button class="live-test">live test</button>
+</a>
+<a href="{{project.gitHubLink}}" target="_blank">
+  <button class="gitHub">Github</button>
+</a>
+</div>
+</div>
+</div>
 </section>

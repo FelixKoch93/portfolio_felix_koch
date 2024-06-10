@@ -4,57 +4,68 @@
     height: 20vh;
     padding-top: 20px;
     background-color: rgba(20, 29, 47, 1);
+}
 
-    .social-buttons {
-        position: relative;
-        flex-direction: row;
+.social-links .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.social-links .social-buttons {
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    width: 373px;
+    padding-top: 20px;
+
+    .vector-2 {
+        width: 100px;
+        height: 4px;
+        margin-top: 15px;
+    }
+
+    .buttons-img {
+        width: 100%;
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        height: 100%;
-        width: 373px;
-        padding-top: 20px;
+        height: 30px;
+        justify-content: space-evenly;
 
-        .vector-2 {
-            width: 100px;
-            height: 4px;
-            margin-top: 15px;
-        }
-
-        .buttons-img {
-            width: 100%;
-            display: flex;
-            height: 30px;
-            justify-content: space-evenly;
-
-            >a{
-                &:hover{
-                    transform: scale(1.2);
-                }
+        >a {
+            &:hover {
+                transform: scale(1.2);
             }
         }
     }
-        .e-mail {
-            width: 248px;
-            height: 28px;
-            padding-top: 20px;
-            font-family: 'Poppins';
-            font-weight: 400;
-            font-size: 23px;
-            line-height: 27.6px;
-            color: rgba(255, 255, 255, 1);
-            text-decoration: none;
+}
 
-            
-                &:hover{
-                    transform: scale(1.05);
-                }
-            
-        }
-    }
+.social-links .e-mail {
+    width: 248px;
+    height: 28px;
+    padding-top: 20px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27.6px;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
 
-    @media (max-width: 768px) {
-        .e-mail{
-            display: none !important;
-        }
+    &:hover {
+        transform: scale(1.05);
     }
+}
+
+@media (max-width: 768px) {
+    .social-links .e-mail {
+        display: none !important;
+    }
+}
+
+@media(max-width: 328px){
+    .social-links .social-buttons{
+        width: 100%;
+    }
+}

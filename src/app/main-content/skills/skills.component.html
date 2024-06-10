@@ -1,21 +1,23 @@
 <section>
-    <div class="signs">
-        <div *ngFor="let url of signPictures; let i = index" class="sign-and-text">
-            <img [src]="url" alt="">
-            <p>{{signText[i] | translate}}</p>
-        </div>
-    </div>
-    <div class="my-skills">
-        <div class="skills">
-            <div class="skill-Headline">
-                <h3>{{ 'MYSKILLS.SkillTitle' | translate }}</h3>
-                <img class="vector-2" src="../../../assets/img/vector2.png" alt="">
+    <div class="container">
+        <div class="signs">
+            <div *ngFor="let url of signPictures; let i = index" class="sign-and-text">
+                <img [src]="url" alt="">
+                <p>{{signText[i] | translate}}</p>
             </div>
-
-            <p>{{ 'MYSKILLS.SkillDescription' | translate }}</p>
         </div>
-        <a href="#contact">
-            <button class="lets-talk">{{ 'LANDINGPAGE.Contact' | translate }}</button>
-        </a>
+        <div class="my-skills">
+            <div class="skills">
+                <div class="skill-Headline">
+                    <h3>{{ 'MYSKILLS.SkillTitle' | translate }}</h3>
+                    <img class="vector-2" src="../../../assets/img/vector2.png" alt="">
+                </div>
+
+                <p>{{ 'MYSKILLS.SkillDescription' | translate }}</p>
+            </div>
+            <a href="#contact">
+                <button class="lets-talk">{{ 'LANDINGPAGE.Contact' | translate }}</button>
+            </a>
+        </div>
     </div>
 </section>
