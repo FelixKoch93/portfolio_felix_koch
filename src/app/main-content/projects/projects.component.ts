@@ -11,7 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements AfterViewInit {
-  @ViewChildren('project') projectElements!: QueryList<ElementRef>;
+  @ViewChildren('container') containerElements!: QueryList<ElementRef>;
 
   constructor(private translate: TranslateService) {
   }
@@ -58,8 +58,9 @@ export class ProjectsComponent implements AfterViewInit {
       });
     });
 
-    this.projectElements.forEach(project => {
-      observer.observe(project.nativeElement);
+    this.containerElements.forEach(container => {
+      observer.observe(container.nativeElement);
     });
-  }
+}
+
 }

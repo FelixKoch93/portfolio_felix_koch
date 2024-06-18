@@ -30,7 +30,6 @@ export class HeaderComponent {
   }
 
   toggleLanguage() {
-    console.log('toggleLanguage() called');
     this.translate.use(this.translate.currentLang === 'de' ? 'en' : 'de');
     this.setButtonLabel();
 }

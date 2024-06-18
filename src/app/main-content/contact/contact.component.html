@@ -1,58 +1,58 @@
 <section>
     <div class="container">
-    <div class="content">
-        <div class="headline">
-            <img class="vector-2" src="../../../assets/img/vector2.png" alt="">
-            <h3>{{ 'CONTACT.ContactTitle' | translate }}</h3>
-        </div>
-        <div class="contact-container">
-            <div class="contact-text">
-                <h4>{{ 'CONTACT.ContactDescription' | translate }}</h4>
-                <p>{{ 'CONTACT.SENDME' | translate }}</p>
+        <div class="content">
+            <div class="headline">
+                <img class="vector-2" src="../../../assets/img/vector2.png" alt="">
+                <h3>{{ 'CONTACT.ContactTitle' | translate }}</h3>
             </div>
-            <form class="formular" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                <div class="input-fields">
-                    <div class="input-wrapper">
-                        <input #name="ngModel" [(ngModel)]="contactData.name" class="input-name-e-mail" type="text"
-                            name="name" placeholder="{{ 'CONTACT.YOURNAME' | translate }}" required>
-                        <span *ngIf="!name.valid && name.touched" class="required">{{ 'CONTACT.NAMEPLEASE' | translate }}</span>
-                    </div>
-                    <div class="input-wrapper">
-                        <input #email="ngModel" [(ngModel)]="contactData.email" class="input-name-e-mail" type="email"
-                            name="email" placeholder="{{ 'CONTACT.YOUREMAIL' | translate }}" required>
-                        <span *ngIf="!email.valid && email.touched" class="required">{{ 'CONTACT.EMAILPLEASE' | translate }}</span>
-                    </div>
-                    <div class="input-wrapper">
-                        <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" class="textarea"
-                            name="message" id="message" cols="30" rows="6" placeholder="{{ 'CONTACT.YOURMESSAGE' | translate }}"
-                            required></textarea>
-                        <span *ngIf="!message.valid && message.touched" class="required">{{ 'CONTACT.MESSAGEPLEASE' | translate }}</span>
-                    </div>
+            <div class="contact-container">
+                <div class="contact-text">
+                    <h4>{{ 'CONTACT.ContactDescription' | translate }}</h4>
+                    <p>{{ 'CONTACT.SENDME' | translate }}</p>
                 </div>
-                <div class="checkbox-wrapper">
-                    <div class="policy">
-                        <label class="container">
-                            <input #privacy="ngModel" [(ngModel)]="contactData.privacy" type="checkbox" class="checkbox"
-                                name="privacy" required>
-                            <span class="checkmark"></span>
-                        </label>
-                        <p>
-                            {{ 'CONTACT.PRIVACYPOLICYONE' | translate }}
-                            <a class="privacy-policy" href="privacy-policy">{{ 'CONTACT.POLICY' | translate }}</a>
-                            {{ 'CONTACT.PRIVACYPOLICYTWO' | translate }}
-
-                        </p>
+                <form class="formular" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                    <div class="input-fields">
+                        <div class="input-wrapper">
+                            <input #name="ngModel" [(ngModel)]="contactData.name" class="input-name-e-mail" type="text"
+                                name="name" placeholder="{{ 'CONTACT.YOURNAME' | translate }}" required>
+                            <span *ngIf="(!name.valid && name.touched) || (contactForm.submitted && !name.valid)" class="required">{{ 'CONTACT.NAMEPLEASE' | translate }}</span>
+                        </div>
+                        <div class="input-wrapper">
+                            <input #email="ngModel" [(ngModel)]="contactData.email" class="input-name-e-mail"
+                                type="email" name="email" placeholder="{{ 'CONTACT.YOUREMAIL' | translate }}" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <span *ngIf="(!email.valid && email.touched) || (contactForm.submitted && !email.valid)" class="required">{{ 'CONTACT.EMAILPLEASE' | translate }}</span>
+                        </div>
+                        <div class="input-wrapper">
+                            <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message"
+                                class="textarea" name="message" id="message" cols="30" rows="6"
+                                placeholder="{{ 'CONTACT.YOURMESSAGE' | translate }}" required></textarea>
+                            <span *ngIf="(!message.valid && message.touched) || (contactForm.submitted && !message.valid)" class="required">{{ 'CONTACT.MESSAGEPLEASE' | translate }}</span>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <div class="policy">
+                                <label class="container">
+                                    <input #privacy="ngModel" [(ngModel)]="contactData.privacy" type="checkbox"
+                                        class="checkbox" name="privacy" required (change)="onCheckboxChange($event)">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p>
+                                    {{ 'CONTACT.PRIVACYPOLICYONE' | translate }}
+                                    <a class="privacy-policy" (click)="navigateToPrivacyPolicy()" href="javascript:void(0);" target="_self">{{ 'CONTACT.POLICY' | translate }}</a>
+                                    {{ 'CONTACT.PRIVACYPOLICYTWO' | translate }}
+                                </p>
+                            </div>
+                            <span *ngIf="divTouched || (contactForm.submitted && !privacy.valid)" class="policy-required">{{ 'CONTACT.POLICYPLEASE' | translate }}</span>
+                        </div>    
                     </div>
-                    <span *ngIf="!contactData.privacy && divTouched" class="policy-required">{{ 'CONTACT.POLICYPLEASE' | translate }}</span>
-                </div>
-                <div (mouseenter)="divTouched = true" class="your-div-class">
-                    <button type="submit" class="contact-btn" [disabled]="!contactForm.valid">{{ 'CONTACT.SEND' | translate }}</button>
-                </div>
-            </form>
-        </div>
-        <div class="jump-top">
-            <a href="#landingpage"><img src="/assets/img/upTo.svg" alt=""></a>
+                    <div class="your-div-class">
+                        <button type="submit" [ngClass]="{'contact-btn-enabled': contactForm.valid, 'contact-btn-disabled': !contactForm.valid}">{{ 'CONTACT.SEND' | translate }}</button>
+                    </div>
+                </form>
+            </div>
+            <div class="jump-top">
+                <a href="#landingpage"><img src="/assets/img/upTo.svg" alt=""></a>
+            </div>
         </div>
     </div>
-</div>
 </section>

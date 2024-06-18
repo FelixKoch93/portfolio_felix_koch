@@ -14,7 +14,6 @@ export class LandingpageComponent {
   }
 
   toggleLanguage() {
-    console.log('toggleLanguage() called');
     this.translate.use(this.translate.currentLang === 'de' ? 'en' : 'de');
 }
 }

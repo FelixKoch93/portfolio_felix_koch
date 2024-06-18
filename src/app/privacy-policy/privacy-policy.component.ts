@@ -1,20 +1,32 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { ActivatedRoute } from '@angular/router'; // Füge dies hinzu
 
 @Component({
   selector: 'app-privacy-policy',
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './privacy-policy.component.html',
-  styleUrl: './privacy-policy.component.scss'
+  styleUrls: ['./privacy-policy.component.scss']
 })
 export class PrivacyPolicyComponent {
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private route: ActivatedRoute) { // Füge private route: ActivatedRoute hinzu
+    this.checkCurrentLanguage();
   }
 
   toggleLanguage() {
-    console.log('toggleLanguage() called');
     this.translate.use(this.translate.currentLang === 'de' ? 'en' : 'de');
-}
+  }
+
+  checkCurrentLanguage() {
+    this.route.queryParams.subscribe(params => {
+      const lang = params['lang'];
+      if (lang) {
+        this.translate.use(lang);
+      } else {
+        this.translate.use('de');
+      }
+    });
+  }
 }

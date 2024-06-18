@@ -12,21 +12,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    padding-left: 100px;
-    padding-right: 100px;
+    flex-direction: column;
     gap: 80px;
-    transform: translateX(-100%);
-    animation-delay: 0.1s;
 
-    &.reverse-row {
-        .container {
-            flex-direction: row-reverse;
+    &.background-purple {
+        background-image: url('../../../assets/img/shadow4.png');
+        background-size: 22% 100%;
+        background-repeat: no-repeat;
+    }
 
-            .project-review {
-                justify-content: flex-end;
-            }
-        }
+    &.background-green {
+        background-image: url('../../../assets/img/shadow5.png');
+        background-size: 13% 100%;
+        background-position: right 0px;
+        background-repeat: no-repeat;
     }
 
     .container {
@@ -36,6 +35,11 @@
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        animation-delay: 0.1s;
+    }
+
+    .container.reverse-row {
+        flex-direction: row-reverse;
     }
 
     >img {
@@ -64,12 +68,20 @@
     }
 }
 
-.section.visible {
-    animation: slideInFromLeft 0.5s ease-out forwards 0.5s;
+.container.visible:not(.reverse-row) {
+    animation: slideInFromLeft 1s ease-out forwards;
 }
 
-.section.reverse-row.visible {
-    animation: slideInFromRight 0.5s ease-out forwards 0.5s;
+.container.visible.reverse-row {
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+.container.visible:not(.reverse-row) {
+    animation-name: slideInFromLeft;
+}
+
+.container.visible.reverse-row {
+    animation-name: slideInFromRight;
 }
 
 .project-review {
@@ -177,20 +189,7 @@
     }
 }
 
-.background-purple {
-    background-image: url('../../../assets/img/shadow4.png');
-    background-size: 22% 100%;
-    background-repeat: no-repeat;
-}
-
-.background-green {
-    background-image: url('../../../assets/img/shadow5.png');
-    background-size: 13% 100%;
-    background-position: right 0px;
-    background-repeat: no-repeat;
-}
-
-@media(max-width:1111px) {
+@media (max-width: 1111px) {
     section {
         display: flex;
         flex-direction: column;
@@ -240,21 +239,45 @@
     }
 }
 
-@media(max-width:377px) {
-    .section.reverse-row
-    .container{
-        .project-review{
-            .project-links{
+@media(max-width:300px) {
+    .section {
+        .container {
+            .img {
+                >img {
+                    width: 200px !important;
+                }
+            }
+
+            .project-review {
+                .project-text {
+                    h4 {
+                        font-size: 18px;
+                    }
+
+                    .description-text {
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 377px) {
+    .section.reverse-row .container {
+        .project-review {
+            .project-links {
                 display: flex;
                 flex-direction: column;
             }
         }
     }
 
-    .section
-    .container{
-        .project-review{
-            .project-links{
+    .section .container {
+        .project-review {
+            .project-links {
                 display: flex;
                 flex-direction: column;
             }
@@ -262,23 +285,50 @@
     }
 }
 
-@media (max-width: 825px) {
-    .section.reverse-row{
-        padding-left: 0px;
-        padding-right: 0px;
-     .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-left: 0px;
-        padding-right: 0px;
-
-        .project-review {
-            justify-content: flex-end;
+@media (max-width: 390px) {
+    .section {
+        &.background-purple {
+            background-size: 15% 30%;
         }
-    }}
 
+        &.background-green {
+            background-size: 15% 30%;
+        }
+    }
+}
+
+@media(max-width:405px) {
+    .section {
+        .container{
+            .project-review{
+                .project-text{
+                    h4{
+                        font-size: 18px;
+                    }
+                    .description-text{
+                       >p{
+                        font-size: 13px;
+                       } 
+                    }
+                }
+            }
+        }
+      }
+}
+
+@media (max-width: 500px) {
+    .section {
+        &.background-purple {
+            background-size: 20% 50%;
+        }
+
+        &.background-green {
+            background-size: 20% 50%;
+        }
+    }
+}
+
+@media (max-width: 1113px) {
     .section .container {
         display: flex;
         flex-direction: column;
@@ -286,11 +336,13 @@
         align-items: center;
         padding-left: 0px;
         padding-right: 0px;
+
+        &.container.reverse-row {
+            flex-direction: column;
+        }
     }
 
     .section .project-review {
         align-items: center;
     }
 }
-
-

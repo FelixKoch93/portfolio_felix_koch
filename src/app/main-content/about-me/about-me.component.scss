@@ -7,13 +7,16 @@
     padding-right: 100px;
     background-color: rgba(20, 29, 47, 1);
     background-image: url('../../../assets/img/shadow2.png');
-    background-size: 12% 100%;
+    background-size: auto;
     background-repeat: no-repeat;
-    background-position: right 0 bottom 0;
+    background-position-x: calc(100% + 420px);
+    background-position-y: center;
     position: relative;
     font-family: 'Poppins';
     padding-bottom: 50px;
     padding-top: 115px;
+
+
 
     .container {
         max-width: 1120px;
@@ -89,18 +92,39 @@
             }
 
             >p {
-                padding-left: 10px;
-                padding-right: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
         }
 
         .personal {
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
         .image-part {
             display: none;
+        }
+    }
+}
+
+@media(min-width:378px) and (max-width:431px){
+    .about-me{
+       padding-top: 0px; 
+    }
+}
+
+@media(max-width:269px) {
+    .about-me {
+        .text-part {
+            h3 {
+                font-size: 40px;
+            }
+
+            .personal{
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 }
@@ -123,14 +147,14 @@
             }
 
             >p {
-                padding-left: 10px;
-                padding-right: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
         }
 
         .personal {
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
         .image-part {

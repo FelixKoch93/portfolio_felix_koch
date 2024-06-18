@@ -10,7 +10,7 @@
     .container {
         max-width: 1120px; 
         margin: 0 auto;
-        padding: 37px 20px; 
+        padding: 37px 0px 37px 0px; 
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -37,8 +37,6 @@
 
             &:hover {
                 color: rgba(112, 230, 28, 1);
-                transform: scale(1.1);
-                font-weight: bold;
                 text-decoration: underline;
                 text-decoration-color: rgba(151, 71, 255, 1);
             }
@@ -128,10 +126,14 @@
     }
 }
 
+
 @media(max-width:768px) {
     .header {
         .container {
             padding: 10px;
+            .navbar{
+                gap: 12px;
+            }
         }
     }
 

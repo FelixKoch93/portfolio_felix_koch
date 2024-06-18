@@ -1,22 +1,26 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
-
+import { Router } from '@angular/router'; // Füge dies hinzu
 
 @Component({
   selector: 'app-footer',
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private router: Router) { // Füge private router: Router hinzu
   }
 
   toggleLanguage() {
-    console.log('toggleLanguage() called');
     this.translate.use(this.translate.currentLang === 'de' ? 'en' : 'de');
-}
+  }
+
+  navigateToImprint() {
+    const currentLang = this.translate.currentLang;
+    this.router.navigate(['/imprint'], { queryParams: { lang: currentLang } });
+    window.scrollTo(0, 0);
+  }
 }

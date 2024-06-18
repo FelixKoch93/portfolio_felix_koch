@@ -5,4 +5,52 @@ section {
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 50px;
+
+    .container{
+        max-width: 1120px; 
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media(max-width:768px){
+    section{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+   
+}
+
+@media(max-width:320px){
+    h1{
+       font-size: 20px; 
+    }
+    h2{
+       font-size: 15px; 
+    }
+}
+
+@media(max-width:260px){
+    section{
+        font-size: 12px;
+    }
+    h1{
+       font-size: 15px; 
+    }
+
+    h2{
+        font-size: 10px;
+    }
+}
+
+@media(max-width:197px){
+    section{
+        font-size: 10px;
+    }
+    h1{
+       font-size: 13px; 
+    }
+    h2{
+        font-size: 10px;
+    }
 }
